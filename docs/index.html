@@ -187,6 +187,7 @@ svg {
   z-index: 50;
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 #controls button {
   background: #1a1a2a;
@@ -199,6 +200,25 @@ svg {
   font-family: inherit;
 }
 #controls button:hover { color: #fff; border-color: #444; }
+#edge-dropdown-wrap { position: relative; }
+#edge-dropdown-btn {
+  background: #1a1a2a; border: 1px solid #2a2a3a; color: #888;
+  font-size: 11px; padding: 4px 10px; border-radius: 3px;
+  cursor: pointer; font-family: inherit;
+}
+#edge-dropdown-btn:hover { color: #dde; border-color: rgba(85,204,255,0.4); }
+#edge-dropdown-menu {
+  position: absolute; top: 100%; right: 0; width: 260px;
+  background: #1a1a2a; border: 1px solid #2a2a3a; border-radius: 4px;
+  padding: 8px 0; display: none; margin-top: 4px;
+}
+#edge-dropdown-menu.open { display: block; }
+#edge-dropdown-menu label {
+  display: flex; align-items: center; gap: 6px; padding: 4px 12px;
+  color: #aab; cursor: pointer; font-size: 11px;
+}
+#edge-dropdown-menu label:hover { background: rgba(85,204,255,0.06); color: #dde; }
+#edge-dropdown-menu .edge-count { color: #556; margin-left: auto; }
 #search {
   position: fixed;
   top: 16px;
@@ -230,6 +250,10 @@ svg {
   <input type="text" id="search-input" placeholder="Search concepts...">
 </div>
 <div id="controls">
+  <div id="edge-dropdown-wrap">
+    <button id="edge-dropdown-btn">Edge types ▾</button>
+    <div id="edge-dropdown-menu"></div>
+  </div>
   <button id="btn-reset">Reset view</button>
 </div>
 <div id="graph-container"></div>
@@ -341,33 +365,50 @@ fetch('data.json').then(r => r.json()).then(data => {
     node.attr('transform', d => `translate(${d.x},${d.y})`);
   });
 
-  // Legend
-  const legend = d3.select('#legend');
-  let activeCluster = null;
+  // Edge type filter
+  const edgeLabels = {
+    authored_by: 'Authored by',
+    related_to: 'Related to',
+    instance_of: 'Instance of',
+    convergent_with: 'Convergent with',
+    structural_analog_of: 'Structural analog',
+    contrasts_with: 'Contrasts with',
+    describes_mechanism_of: 'Describes mechanism',
+    structural_isomorphism: 'Structural isomorphism',
+  };
 
-  Object.entries(data.colors).forEach(([cluster, color]) => {
-    const item = legend.append('div')
-      .attr('class', 'legend-item')
-      .on('click', () => {
-        if (activeCluster === cluster) {
-          activeCluster = null;
-          node.style('opacity', 1);
-          link.style('opacity', 0.3);
-          legend.selectAll('.legend-item').classed('dimmed', false);
-        } else {
-          activeCluster = cluster;
-          node.style('opacity', d => d.cluster === cluster ? 1 : 0.1);
-          link.style('opacity', l => {
-            const s = l.source.cluster || data.nodes.find(n => n.id === l.source)?.cluster;
-            const t = l.target.cluster || data.nodes.find(n => n.id === l.target)?.cluster;
-            return (s === cluster || t === cluster) ? 0.6 : 0.03;
-          });
-          legend.selectAll('.legend-item').classed('dimmed', true);
-          item.classed('dimmed', false);
-        }
-      });
-    item.append('div').attr('class', 'legend-dot').style('background', color);
-    item.append('span').text(cluster.length > 35 ? cluster.slice(0, 33) + '…' : cluster);
+  const edgeCounts = {};
+  data.links.forEach(l => { edgeCounts[l.predicate] = (edgeCounts[l.predicate] || 0) + 1; });
+
+  const enabledPreds = new Set(Object.keys(edgeLabels));
+  const menu = document.getElementById('edge-dropdown-menu');
+
+  Object.entries(edgeLabels).forEach(([pred, label]) => {
+    const count = edgeCounts[pred] || 0;
+    if (count === 0) return;
+    const color = edgeColors[pred] || '#888';
+    const el = document.createElement('label');
+    el.innerHTML = `<input type="checkbox" class="edge-filter" data-pred="${pred}" checked> <span style="color:${color}">● ${label}</span> <span class="edge-count">${count}</span>`;
+    menu.appendChild(el);
+  });
+
+  document.getElementById('edge-dropdown-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('open');
+  });
+  document.addEventListener('click', () => menu.classList.remove('open'));
+  menu.addEventListener('click', (e) => e.stopPropagation());
+
+  function applyEdgeFilter() {
+    enabledPreds.clear();
+    menu.querySelectorAll('.edge-filter').forEach(cb => {
+      if (cb.checked) enabledPreds.add(cb.dataset.pred);
+    });
+    link.style('display', d => enabledPreds.has(d.predicate) ? '' : 'none');
+  }
+
+  menu.querySelectorAll('.edge-filter').forEach(cb => {
+    cb.addEventListener('change', applyEdgeFilter);
   });
 
   // Search
@@ -389,9 +430,11 @@ fetch('data.json').then(r => r.json()).then(data => {
   document.getElementById('btn-reset').addEventListener('click', () => {
     svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
     node.style('opacity', 1);
-    link.style('opacity', 0.3);
-    activeCluster = null;
-    legend.selectAll('.legend-item').classed('dimmed', false);
+    link.style('display', '');
+    link.attr('stroke-opacity', d => d.predicate === 'structural_isomorphism' ? 0.7 : d.predicate === 'convergent_with' ? 0.6 : 0.4);
+    menu.querySelectorAll('.edge-filter').forEach(cb => { cb.checked = true; });
+    enabledPreds.clear();
+    Object.keys(edgeLabels).forEach(p => enabledPreds.add(p));
     searchInput.value = '';
     closePanel();
   });
