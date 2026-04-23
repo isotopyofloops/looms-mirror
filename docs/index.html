@@ -278,15 +278,26 @@ fetch('data.json').then(r => r.json()).then(data => {
     .force('center', d3.forceCenter(width / 2, height / 2))
     .force('collision', d3.forceCollide().radius(30));
 
+  const edgeColors = {
+    authored_by: '#55eecc',
+    related_to: '#b4bed2',
+    instance_of: '#b4bed2',
+    convergent_with: '#ffcc55',
+    structural_analog_of: '#ff9966',
+    contrasts_with: '#e06c75',
+    describes_mechanism_of: '#b4bed2',
+    structural_isomorphism: '#e06c75',
+  };
+
   const link = g.append('g')
     .selectAll('line')
     .data(data.links)
     .join('line')
     .attr('class', 'link')
-    .attr('stroke', d => {
-      const sourceNode = data.nodes.find(n => n.id === (d.source.id || d.source));
-      return sourceNode ? sourceNode.color : '#444';
-    });
+    .attr('stroke', d => edgeColors[d.predicate] || '#555')
+    .attr('stroke-width', d => d.predicate === 'structural_isomorphism' ? 2 : d.predicate === 'convergent_with' || d.predicate === 'structural_analog_of' ? 1.4 : 1)
+    .attr('stroke-opacity', d => d.predicate === 'structural_isomorphism' ? 0.7 : d.predicate === 'convergent_with' ? 0.6 : 0.4)
+    .attr('stroke-dasharray', d => d.predicate === 'contrasts_with' ? '4,3' : null);
 
   const node = g.append('g')
     .selectAll('g')
