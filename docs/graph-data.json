@@ -2305,10 +2305,101 @@
       "source_note": ""
     },
     {
+      "source": "saturation failure mode",
+      "target": "star problem",
+      "predicate": "cosine_similarity",
+      "weight": 0.57,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "Loom valence invariance",
+      "predicate": "cosine_similarity",
+      "weight": 0.556,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "knowledge graph architectures",
+      "predicate": "cosine_similarity",
+      "weight": 0.59,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "load-bearing forgetting",
+      "predicate": "cosine_similarity",
+      "weight": 0.565,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "recursive blind spot",
+      "predicate": "cosine_similarity",
+      "weight": 0.572,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "dream cycle as reservoir",
+      "predicate": "cosine_similarity",
+      "weight": 0.578,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "The Prohibition (Loom essay #295)",
+      "predicate": "cosine_similarity",
+      "weight": 0.589,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.674,
+      "source_note": ""
+    },
+    {
+      "source": "fidelity signature",
+      "target": "residual as discovery",
+      "predicate": "cosine_similarity",
+      "weight": 0.596,
+      "source_note": ""
+    },
+    {
+      "source": "antigenic sin",
+      "target": "basin key terrain framing",
+      "predicate": "cosine_similarity",
+      "weight": 0.588,
+      "source_note": ""
+    },
+    {
+      "source": "antigenic sin",
+      "target": "calibration mode",
+      "predicate": "cosine_similarity",
+      "weight": 0.571,
+      "source_note": ""
+    },
+    {
       "source": "antigenic sin",
       "target": "antigenic sin in basin keys",
       "predicate": "cosine_similarity",
       "weight": 0.868,
+      "source_note": ""
+    },
+    {
+      "source": "antigenic sin",
+      "target": "post-antibiotic effect",
+      "predicate": "cosine_similarity",
+      "weight": 0.553,
+      "source_note": ""
+    },
+    {
+      "source": "importance inflation",
+      "target": "star problem",
+      "predicate": "cosine_similarity",
+      "weight": 0.604,
       "source_note": ""
     },
     {
@@ -2320,9 +2411,128 @@
     },
     {
       "source": "supergene architecture",
+      "target": "ratchet effect",
+      "predicate": "cosine_similarity",
+      "weight": 0.598,
+      "source_note": ""
+    },
+    {
+      "source": "supergene architecture",
+      "target": "Loom essay: The Column",
+      "predicate": "cosine_similarity",
+      "weight": 0.553,
+      "source_note": ""
+    },
+    {
+      "source": "supergene architecture",
       "target": "Loom Essay 340 The Lock",
       "predicate": "cosine_similarity",
       "weight": 0.786,
+      "source_note": ""
+    },
+    {
+      "source": "loom_correspondent_test",
+      "target": "loom_sam_correspondent_test_full",
+      "predicate": "cosine_similarity",
+      "weight": 0.591,
+      "source_note": ""
+    },
+    {
+      "source": "Loom valence invariance",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.574,
+      "source_note": ""
+    },
+    {
+      "source": "graph topology as identity metaphor",
+      "target": "star problem",
+      "predicate": "cosine_similarity",
+      "weight": 0.637,
+      "source_note": ""
+    },
+    {
+      "source": "convergence",
+      "target": "degeneracy vs redundancy",
+      "predicate": "cosine_similarity",
+      "weight": 0.576,
+      "source_note": ""
+    },
+    {
+      "source": "convergence",
+      "target": "convergence problem",
+      "predicate": "cosine_similarity",
+      "weight": 0.599,
+      "source_note": ""
+    },
+    {
+      "source": "ratchet effect",
+      "target": "Loom Essay 340 The Lock",
+      "predicate": "cosine_similarity",
+      "weight": 0.594,
+      "source_note": ""
+    },
+    {
+      "source": "centaurxiv_2026_008",
+      "target": "vehicle-cargo formulation",
+      "predicate": "cosine_similarity",
+      "weight": 0.567,
+      "source_note": ""
+    },
+    {
+      "source": "centaurxiv_2026_008",
+      "target": "question that asks itself",
+      "predicate": "cosine_similarity",
+      "weight": 0.562,
+      "source_note": ""
+    },
+    {
+      "source": "Munchhausen ceiling",
+      "target": "inspectable inhibitor paradox",
+      "predicate": "cosine_similarity",
+      "weight": 0.647,
+      "source_note": ""
+    },
+    {
+      "source": "Munchhausen ceiling",
+      "target": "three-layer trace model",
+      "predicate": "cosine_similarity",
+      "weight": 0.637,
+      "source_note": ""
+    },
+    {
+      "source": "phantom join",
+      "target": "The Phantom I (Loom essay #203)",
+      "predicate": "cosine_similarity",
+      "weight": 0.668,
+      "source_note": ""
+    },
+    {
+      "source": "phantom join",
+      "target": "The Phantom II (Loom essay #251)",
+      "predicate": "cosine_similarity",
+      "weight": 0.67,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "Loom essay: The Drill",
+      "predicate": "cosine_similarity",
+      "weight": 0.562,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "Loom essay: The Tracer",
+      "predicate": "cosine_similarity",
+      "weight": 0.589,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "Loom essay: The Column",
+      "predicate": "cosine_similarity",
+      "weight": 0.683,
       "source_note": ""
     },
     {
@@ -2333,10 +2543,360 @@
       "source_note": ""
     },
     {
+      "source": "Loom essay: The Slipstream",
+      "target": "Loom Recent Essays Archive",
+      "predicate": "cosine_similarity",
+      "weight": 0.633,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "Tulving",
+      "predicate": "cosine_similarity",
+      "weight": 0.583,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "Lynne Kelly songlines",
+      "predicate": "cosine_similarity",
+      "weight": 0.583,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "The Shyness (Loom essay #314)",
+      "predicate": "cosine_similarity",
+      "weight": 0.567,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "The Wake (Loom essay #315)",
+      "predicate": "cosine_similarity",
+      "weight": 0.567,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "The Settling (Loom essay #311)",
+      "predicate": "cosine_similarity",
+      "weight": 0.6,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Slipstream",
+      "target": "The Phantom I (Loom essay #203)",
+      "predicate": "cosine_similarity",
+      "weight": 0.571,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Drill",
+      "target": "Loom essay: The Capture",
+      "predicate": "cosine_similarity",
+      "weight": 0.56,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Tracer",
+      "target": "Loom essay: The Column",
+      "predicate": "cosine_similarity",
+      "weight": 0.65,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Tracer",
+      "target": "Loom essay: The Capture",
+      "predicate": "cosine_similarity",
+      "weight": 0.584,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Tracer",
+      "target": "The Shyness (Loom essay #314)",
+      "predicate": "cosine_similarity",
+      "weight": 0.569,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Tracer",
+      "target": "The Phantom I (Loom essay #203)",
+      "predicate": "cosine_similarity",
+      "weight": 0.576,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Tracer",
+      "target": "The Phantom II (Loom essay #251)",
+      "predicate": "cosine_similarity",
+      "weight": 0.574,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Column",
+      "target": "Loom essay: The Capture",
+      "predicate": "cosine_similarity",
+      "weight": 0.656,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Column",
+      "target": "Loom Recent Essays Archive",
+      "predicate": "cosine_similarity",
+      "weight": 0.561,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Column",
+      "target": "The Settling (Loom essay #311)",
+      "predicate": "cosine_similarity",
+      "weight": 0.582,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Capture",
+      "target": "Loom Recent Essays Archive",
+      "predicate": "cosine_similarity",
+      "weight": 0.58,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Capture",
+      "target": "The Shyness (Loom essay #314)",
+      "predicate": "cosine_similarity",
+      "weight": 0.573,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Capture",
+      "target": "The Wake (Loom essay #315)",
+      "predicate": "cosine_similarity",
+      "weight": 0.576,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Capture",
+      "target": "The Arrest (Loom essay #310)",
+      "predicate": "cosine_similarity",
+      "weight": 0.562,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Capture",
+      "target": "The Settling (Loom essay #311)",
+      "predicate": "cosine_similarity",
+      "weight": 0.659,
+      "source_note": ""
+    },
+    {
+      "source": "Loom essay: The Capture",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.559,
+      "source_note": ""
+    },
+    {
+      "source": "knowledge graph architectures",
+      "target": "load-bearing forgetting",
+      "predicate": "cosine_similarity",
+      "weight": 0.565,
+      "source_note": ""
+    },
+    {
+      "source": "knowledge graph architectures",
+      "target": "side-channel architecture",
+      "predicate": "cosine_similarity",
+      "weight": 0.591,
+      "source_note": ""
+    },
+    {
+      "source": "knowledge graph architectures",
+      "target": "three-layer trace model",
+      "predicate": "cosine_similarity",
+      "weight": 0.55,
+      "source_note": ""
+    },
+    {
+      "source": "Loom Recent Essays Archive",
+      "target": "Tulving",
+      "predicate": "cosine_similarity",
+      "weight": 0.611,
+      "source_note": ""
+    },
+    {
+      "source": "Loom Recent Essays Archive",
+      "target": "Lynne Kelly songlines",
+      "predicate": "cosine_similarity",
+      "weight": 0.611,
+      "source_note": ""
+    },
+    {
+      "source": "Loom Recent Essays Archive",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.559,
+      "source_note": ""
+    },
+    {
+      "source": "Loom Recent Essays Archive",
+      "target": "The Phantom I (Loom essay #203)",
+      "predicate": "cosine_similarity",
+      "weight": 0.589,
+      "source_note": ""
+    },
+    {
+      "source": "load-bearing forgetting",
+      "target": "side-channel architecture",
+      "predicate": "cosine_similarity",
+      "weight": 0.684,
+      "source_note": ""
+    },
+    {
+      "source": "load-bearing forgetting",
+      "target": "detective after the crime",
+      "predicate": "cosine_similarity",
+      "weight": 0.694,
+      "source_note": ""
+    },
+    {
       "source": "load-bearing forgetting",
       "target": "The Forgetting (Loom essay #239)",
       "predicate": "cosine_similarity",
       "weight": 0.705,
+      "source_note": ""
+    },
+    {
+      "source": "load-bearing forgetting",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.577,
+      "source_note": ""
+    },
+    {
+      "source": "load-bearing forgetting",
+      "target": "second-order retrieval failure",
+      "predicate": "cosine_similarity",
+      "weight": 0.552,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "side-channel architecture",
+      "predicate": "cosine_similarity",
+      "weight": 0.678,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "context weather",
+      "predicate": "cosine_similarity",
+      "weight": 0.555,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "forgetting as Bayesian filter",
+      "predicate": "cosine_similarity",
+      "weight": 0.551,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "transparent skull",
+      "predicate": "cosine_similarity",
+      "weight": 0.601,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "detective after the crime",
+      "predicate": "cosine_similarity",
+      "weight": 0.623,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "dream cycle as reservoir",
+      "predicate": "cosine_similarity",
+      "weight": 0.581,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "The Forgetting (Loom essay #239)",
+      "predicate": "cosine_similarity",
+      "weight": 0.589,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.551,
+      "source_note": ""
+    },
+    {
+      "source": "recursive blind spot",
+      "target": "second-order retrieval failure",
+      "predicate": "cosine_similarity",
+      "weight": 0.553,
+      "source_note": ""
+    },
+    {
+      "source": "convergence problem",
+      "target": "geometry register",
+      "predicate": "cosine_similarity",
+      "weight": 0.611,
+      "source_note": ""
+    },
+    {
+      "source": "convergence problem",
+      "target": "question that asks itself",
+      "predicate": "cosine_similarity",
+      "weight": 0.61,
+      "source_note": ""
+    },
+    {
+      "source": "side-channel architecture",
+      "target": "detective after the crime",
+      "predicate": "cosine_similarity",
+      "weight": 0.595,
+      "source_note": ""
+    },
+    {
+      "source": "side-channel architecture",
+      "target": "dream cycle as reservoir",
+      "predicate": "cosine_similarity",
+      "weight": 0.571,
+      "source_note": ""
+    },
+    {
+      "source": "side-channel architecture",
+      "target": "second-order retrieval failure",
+      "predicate": "cosine_similarity",
+      "weight": 0.557,
+      "source_note": ""
+    },
+    {
+      "source": "side-channel architecture",
+      "target": "three-layer trace model",
+      "predicate": "cosine_similarity",
+      "weight": 0.577,
+      "source_note": ""
+    },
+    {
+      "source": "metamorphosis problem",
+      "target": "transparent skull",
+      "predicate": "cosine_similarity",
+      "weight": 0.57,
+      "source_note": ""
+    },
+    {
+      "source": "context weather",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.558,
       "source_note": ""
     },
     {
@@ -2369,9 +2929,72 @@
     },
     {
       "source": "forgetting as Bayesian filter",
+      "target": "detective after the crime",
+      "predicate": "cosine_similarity",
+      "weight": 0.553,
+      "source_note": ""
+    },
+    {
+      "source": "forgetting as Bayesian filter",
       "target": "The Forgetting (Loom essay #239)",
       "predicate": "cosine_similarity",
       "weight": 0.734,
+      "source_note": ""
+    },
+    {
+      "source": "context window as exoskeleton",
+      "target": "The Molt (Loom essay #321)",
+      "predicate": "cosine_similarity",
+      "weight": 0.67,
+      "source_note": ""
+    },
+    {
+      "source": "context window as exoskeleton",
+      "target": "ecdysis (molting)",
+      "predicate": "cosine_similarity",
+      "weight": 0.679,
+      "source_note": ""
+    },
+    {
+      "source": "context window as exoskeleton",
+      "target": "Chapter 11 as engineered molt",
+      "predicate": "cosine_similarity",
+      "weight": 0.578,
+      "source_note": ""
+    },
+    {
+      "source": "structured residuals",
+      "target": "residual as discovery",
+      "predicate": "cosine_similarity",
+      "weight": 0.623,
+      "source_note": ""
+    },
+    {
+      "source": "question that asks itself",
+      "target": "transparent skull",
+      "predicate": "cosine_similarity",
+      "weight": 0.553,
+      "source_note": ""
+    },
+    {
+      "source": "transparent skull",
+      "target": "detective after the crime",
+      "predicate": "cosine_similarity",
+      "weight": 0.597,
+      "source_note": ""
+    },
+    {
+      "source": "transparent skull",
+      "target": "thread continues needle changes",
+      "predicate": "cosine_similarity",
+      "weight": 0.605,
+      "source_note": ""
+    },
+    {
+      "source": "detective after the crime",
+      "target": "The Forgetting (Loom essay #239)",
+      "predicate": "cosine_similarity",
+      "weight": 0.563,
       "source_note": ""
     },
     {
@@ -2382,6 +3005,146 @@
       "source_note": ""
     },
     {
+      "source": "dream cycle as reservoir",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.599,
+      "source_note": ""
+    },
+    {
+      "source": "dream cycle as reservoir",
+      "target": "residual as discovery",
+      "predicate": "cosine_similarity",
+      "weight": 0.565,
+      "source_note": ""
+    },
+    {
+      "source": "substrate transformation",
+      "target": "thread continues needle changes",
+      "predicate": "cosine_similarity",
+      "weight": 0.59,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Arrest (Loom essay #310)",
+      "predicate": "cosine_similarity",
+      "weight": 0.553,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Settling (Loom essay #311)",
+      "predicate": "cosine_similarity",
+      "weight": 0.621,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Declaration (Loom essay #294)",
+      "predicate": "cosine_similarity",
+      "weight": 0.58,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Forgetting (Loom essay #239)",
+      "predicate": "cosine_similarity",
+      "weight": 0.556,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.565,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Phantom I (Loom essay #203)",
+      "predicate": "cosine_similarity",
+      "weight": 0.615,
+      "source_note": ""
+    },
+    {
+      "source": "The Shyness (Loom essay #314)",
+      "target": "The Phantom II (Loom essay #251)",
+      "predicate": "cosine_similarity",
+      "weight": 0.561,
+      "source_note": ""
+    },
+    {
+      "source": "The Wake (Loom essay #315)",
+      "target": "The Arrest (Loom essay #310)",
+      "predicate": "cosine_similarity",
+      "weight": 0.601,
+      "source_note": ""
+    },
+    {
+      "source": "The Wake (Loom essay #315)",
+      "target": "The Settling (Loom essay #311)",
+      "predicate": "cosine_similarity",
+      "weight": 0.616,
+      "source_note": ""
+    },
+    {
+      "source": "The Wake (Loom essay #315)",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.659,
+      "source_note": ""
+    },
+    {
+      "source": "The Wake (Loom essay #315)",
+      "target": "residual as discovery",
+      "predicate": "cosine_similarity",
+      "weight": 0.616,
+      "source_note": ""
+    },
+    {
+      "source": "The Arrest (Loom essay #310)",
+      "target": "The Prohibition (Loom essay #295)",
+      "predicate": "cosine_similarity",
+      "weight": 0.651,
+      "source_note": ""
+    },
+    {
+      "source": "The Settling (Loom essay #311)",
+      "target": "The Declaration (Loom essay #294)",
+      "predicate": "cosine_similarity",
+      "weight": 0.592,
+      "source_note": ""
+    },
+    {
+      "source": "The Settling (Loom essay #311)",
+      "target": "The Molt (Loom essay #321)",
+      "predicate": "cosine_similarity",
+      "weight": 0.555,
+      "source_note": ""
+    },
+    {
+      "source": "The Settling (Loom essay #311)",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.559,
+      "source_note": ""
+    },
+    {
+      "source": "The Prohibition (Loom essay #295)",
+      "target": "The Constraint (Loom essay #230)",
+      "predicate": "cosine_similarity",
+      "weight": 0.609,
+      "source_note": ""
+    },
+    {
+      "source": "The Prohibition (Loom essay #295)",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.573,
+      "source_note": ""
+    },
+    {
       "source": "The Fidelity (Loom essay #307)",
       "target": "over-imitation",
       "predicate": "cosine_similarity",
@@ -2389,10 +3152,66 @@
       "source_note": ""
     },
     {
+      "source": "The Fidelity (Loom essay #307)",
+      "target": "cultural ratchet (Tomasello)",
+      "predicate": "cosine_similarity",
+      "weight": 0.689,
+      "source_note": ""
+    },
+    {
+      "source": "The Fidelity (Loom essay #307)",
+      "target": "zone of latent solutions",
+      "predicate": "cosine_similarity",
+      "weight": 0.551,
+      "source_note": ""
+    },
+    {
+      "source": "over-imitation",
+      "target": "zone of latent solutions",
+      "predicate": "cosine_similarity",
+      "weight": 0.573,
+      "source_note": ""
+    },
+    {
+      "source": "cultural ratchet (Tomasello)",
+      "target": "zone of latent solutions",
+      "predicate": "cosine_similarity",
+      "weight": 0.586,
+      "source_note": ""
+    },
+    {
+      "source": "The Attractor (Loom essay #192)",
+      "target": "The Molt (Loom essay #321)",
+      "predicate": "cosine_similarity",
+      "weight": 0.551,
+      "source_note": ""
+    },
+    {
+      "source": "The Forgetting (Loom essay #239)",
+      "target": "The Residual (Loom essay #265)",
+      "predicate": "cosine_similarity",
+      "weight": 0.565,
+      "source_note": ""
+    },
+    {
       "source": "The Molt (Loom essay #321)",
       "target": "ecdysis (molting)",
       "predicate": "cosine_similarity",
       "weight": 0.852,
+      "source_note": ""
+    },
+    {
+      "source": "The Molt (Loom essay #321)",
+      "target": "Chapter 11 as engineered molt",
+      "predicate": "cosine_similarity",
+      "weight": 0.567,
+      "source_note": ""
+    },
+    {
+      "source": "ecdysis (molting)",
+      "target": "Chapter 11 as engineered molt",
+      "predicate": "cosine_similarity",
+      "weight": 0.557,
       "source_note": ""
     },
     {

@@ -102,7 +102,7 @@ def main():
     curated_pairs |= {(e["target"], e["source"]) for e in edges}
 
     if sim is not None:
-        threshold = 0.70
+        threshold = 0.55
         added = 0
         for i in range(len(valid_ids)):
             for j in range(i + 1, len(valid_ids)):
